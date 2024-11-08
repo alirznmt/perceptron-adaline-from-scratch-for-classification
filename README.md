@@ -34,11 +34,4 @@ This project demonstrates fundamental neural network models, focusing on the Per
 
 The project includes analyses of how weight initialization and learning rate adjustments affect the classification accuracy and mean squared error for each model. It highlights the conditions under which each model performs optimally.
 
-## Getting Started
 
-To run this project, clone the repository and install the dependencies listed in `requirements.txt`. You can then execute the provided Jupyter notebooks or Python scripts to train and test the Perceptron and Adaline models on the dataset.
-
-```bash
-git clone <repository-url>
-cd <repository-folder>
-pip install -r requirements.txt
