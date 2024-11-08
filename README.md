@@ -1,36 +1,44 @@
-# Perceptron Model for Handwritten Character Recognition
+# Neural Network Implementation: Perceptron and Adaline Models
 
-This repository contains an implementation of a **Perceptron neural network model** designed for binary classification, specifically targeting a handwritten character recognition task. The project explores different initialization techniques and parameter configurations to optimize the model's classification accuracy.
+This repository contains implementations of **Perceptron** and **Adaline (Adaptive Linear Neuron)** neural network models for binary classification tasks. The project explores various initialization techniques, learning rates, and configurations to optimize the models' performance on a handwritten character recognition dataset.
 
 ## Project Overview
 
-This project is inspired by exercises on artificial neural networks, focusing on implementing the fundamental Perceptron model and evaluating its performance on a character recognition task.
+This project demonstrates fundamental neural network models, focusing on the Perceptron and Adaline algorithms. It provides a hands-on approach to training, testing, and tuning these models, with a specific focus on understanding how initialization and learning rate affect performance.
 
-- **Objective**: Train and test the Perceptron model on a small dataset of pixel-based binary vectors, each representing a character, to classify them accurately.
-- **Dataset**: The dataset consists of character images represented as binary vectors, with each pixel's value determining the character's classification.
+- **Objective**: To classify characters accurately using simple neural network models.
+- **Dataset**: A set of binary vectors representing pixel-based character images, where each vector represents a character class.
 
 ## Key Features
 
-- **Perceptron Model**: Implementation of the Perceptron algorithm, emphasizing learning through error correction.
-- **Custom Weight Initialization**: Experimentation with different initialization methods to study their effect on learning:
+- **Perceptron Model**: A basic neural network model implementing binary classification through error-correction learning.
+- **Adaline Model**: Similar to the Perceptron, but uses a linear activation function and minimizes the mean squared error (MSE) during training.
+- **Weight Initialization Techniques**: Experimentation with various weight initialization methods to observe their effect on learning:
   - Zero initialization
-  - Random initialization (uniform and normal distributions)
+  - Uniform and normal distribution initializations
   - Xavier (Glorot) initialization
   - Kaiming (He) initialization
-- **Thresholding and Activation**: Custom activation functions and threshold adjustments to handle binary classification.
-- **Error Rate Calculation**: A metric to evaluate model performance, reporting error rates on both training and testing datasets.
+- **Learning Rate Tuning**: Experimentation with different learning rates to optimize convergence.
+- **Error Rate and MSE Calculation**: For performance evaluation, the Perceptron model uses error rate, while Adaline uses mean squared error as its primary metric.
 
 ## Repository Structure
 
 - **Data**: Contains the dataset for training and testing.
 - **Notebooks and Scripts**: Jupyter notebooks and Python scripts for:
-  - Implementing the Perceptron model
-  - Training and testing routines
-  - Performance evaluation and visualization
-- **Results**: Documentation of model performance under various configurations.
+  - Implementing and training the Perceptron and Adaline models
+  - Testing and performance evaluation
+  - Visualization of results
+- **Results**: Documented results showing how different configurations impact model performance.
 
 ## Experimental Results
 
-The project includes a detailed analysis of how different weight initialization techniques and learning rates impact the Perceptron's classification accuracy. The results highlight the effectiveness of each initialization approach in reducing classification errors.
+The project includes analyses of how weight initialization and learning rate adjustments affect the classification accuracy and mean squared error for each model. It highlights the conditions under which each model performs optimally.
 
+## Getting Started
 
+To run this project, clone the repository and install the dependencies listed in `requirements.txt`. You can then execute the provided Jupyter notebooks or Python scripts to train and test the Perceptron and Adaline models on the dataset.
+
+```bash
+git clone <repository-url>
+cd <repository-folder>
+pip install -r requirements.txt
